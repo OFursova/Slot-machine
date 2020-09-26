@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 98vw;
+  /* mozilla works fine only this way*/
+  height: 90vh;
+  /* mozilla works fine only this way*/
+  padding: 2vh 2vw;
+  background-image: url(../img/treasure_cave_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/treasure_cave_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: yellow;
+  z-index: 2;
+}
+
+form input {
+  margin: 0 1em;
+  background-color: bisque;
+  border: none;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+form input[type="button"] {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(yellow), to(orange));
+  background-image: linear-gradient(yellow, orange);
+  border: none;
+  color: orangered;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40vw;
+  height: 60vh;
+  margin: 2vh;
+  background-color: rgba(160, 81, 45, 0.5);
+  color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+table thead {
+  font-weight: bold;
+  background-color: rgba(245, 140, 12, 0.5);
+  text-shadow: 0 0 10px aliceblue;
+}
+
+table tr {
+  height: 3em;
+}
+
+table tr td:last-child {
+  width: 6vw;
+}
+
+table tr td {
+  border: 1px solid silver;
+  padding: 5px;
+  width: 17vw;
+  font-weight: lighter;
+}
+
+table tr td img {
+  max-height: 3em;
+  min-height: 2.5em;
+  max-width: 30%;
+}
+
+#spin {
+  width: 25vw;
+  height: 7vw;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(105, 137, 144, 0.719);
+  -webkit-box-shadow: 0 0 25px aliceblue;
+          box-shadow: 0 0 25px aliceblue;
+}
+
+#spin div {
+  background-color: transparent;
+  width: 70%;
+}
+
+#spin div img {
+  margin: 2px;
+  height: 4em;
+  border-radius: 15px;
+  max-width: 30%;
+}
+
+#spin #lever {
+  width: 3vw;
+  height: 5vw;
+  margin-left: 5px;
+  background-image: url(../img/lever-sprite.png);
+  background-repeat: no-repeat;
+  background-size: 850%;
+  background-position: 68% 65%;
+  border: none;
+}
+
+#spin:hover {
+  background-color: #698990;
+  -webkit-box-shadow: 0 0 45px aliceblue;
+          box-shadow: 0 0 45px aliceblue;
+}
+
+#info {
+  width: 20vw;
+  height: 40vw;
+  font-family: Arial, Helvetica, sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#info h3 {
+  margin: 2vh auto;
+  color: whitesmoke;
+  text-shadow: 2px 2px 10px maroon;
+}
+
+#info p {
+  text-align: center;
+  color: #ec2323;
+  font-size: 2em;
+  margin-bottom: 5px;
+  text-shadow: 0 0 10px aliceblue;
+}
+
+#info .pop-up {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#info .pop-up input[type="number"] {
+  width: 70%;
+  line-height: 2.5em;
+  border: none;
+  border-radius: 15px;
+  background-color: wheat;
+  color: #2d3b15;
+  text-align: center;
+  font-size: 1em;
+}
+
+#info .pop-up input[type="button"] {
+  width: 30%;
+  border: none;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#40d32d), to(#8bf77d));
+  background-image: linear-gradient(#40d32d, #8bf77d);
+  color: #2c3b0f;
+  text-align: center;
+  font-weight: bold;
+}
+
+#info .pop-up input[type="submit"]:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 211, 45, 0.432)), to(rgba(139, 247, 125, 0.486)));
+  background-image: linear-gradient(rgba(64, 211, 45, 0.432), rgba(139, 247, 125, 0.486));
+}
+
+#info button {
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  line-height: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #2d3b15;
+  background-color: rgba(169, 169, 169, 0.7);
+}
+
+#info button:hover {
+  background-color: rgba(47, 79, 79, 0.7);
+  color: thistle;
+  -webkit-box-shadow: 0 0 15px aliceblue;
+          box-shadow: 0 0 15px aliceblue;
+}
+
+#greeting {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2vw;
+  width: 30vw;
+  height: 5vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2em;
+  color: peachpuff;
+  text-align: right;
+  z-index: 1;
+}
+
+#greeting button {
+  width: 40%;
+  padding: 0.5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f766), to(#f7c05b));
+  background-image: linear-gradient(#f7f766, #f7c05b);
+  border: none;
+  color: orangered;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#greeting button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f740), to(#f8b12e));
+  background-image: linear-gradient(#f7f740, #f8b12e);
+}

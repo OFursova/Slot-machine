@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 98vw; /* mozilla works fine only this way*/
+    height: 90vh; /* mozilla works fine only this way*/
+    padding: 2vh 2vw;
+    background-image: url(../img/treasure_cave_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/treasure_cave_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+    z-index: 2;
+
+    input {
+        margin: 0 1em;
+        background-color: bisque;
+        border: none;
+        padding: 1em;
+        border-radius: 15px;
+    }
+
+    input[type="button"] {
+        background-image: linear-gradient(yellow, orange);
+        border: none;
+        color: orangered;
+        padding: 1em;
+        border-radius: 15px;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 40vw;
+    height: 60vh;
+    margin: 2vh;
+    background-color: rgba(160, 81, 45, 0.5);
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    thead {
+        font-weight: bold;
+        background-color: rgba(245, 140, 12, 0.5);
+        text-shadow: 0 0 10px aliceblue;
+    }
+
+    tr {
+        height: 3em;
+
+        td:last-child {
+            width: 6vw;
+        }
+
+        td {
+            border: 1px solid silver;
+            padding: 5px;
+            width: 17vw;
+            font-weight: lighter;
+
+            img {
+                max-height: 3em;
+                min-height: 2.5em;
+                max-width: 30%;
+            }
+        }
+    }
+}
+
+#spin {
+    width: 25vw;
+    height: 7vw;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(105, 137, 144, 0.719);
+    box-shadow: 0 0 25px aliceblue;
+
+    div {
+        background-color: transparent;
+        width: 70%;
+
+        img {
+            margin: 2px;
+            height: 4em;
+            //border: 1px solid rgb(255, 94, 0);
+            //background-image: linear-gradient(orange, yellow);
+            border-radius: 15px;
+            max-width: 30%;
+        }
+    }
+
+    #lever {
+        width: 3vw;
+        height: 5vw;
+        margin-left: 5px;
+        background-image: url(../img/lever-sprite.png);
+        background-repeat: no-repeat;
+        background-size: 850%;
+        background-position: 68% 65%;
+        border: none;
+    }
+}
+
+#spin:hover {
+    background-color: rgb(105, 137, 144);
+    box-shadow: 0 0 45px aliceblue;
+}
+
+#info {
+    width: 20vw;
+    height: 40vw;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+
+    h3 {
+        margin: 2vh auto;
+        color: whitesmoke;
+        text-shadow: 2px 2px 10px maroon;
+    }
+
+    p {
+        text-align: center;
+        color: rgb(236, 35, 35);
+        font-size: 2em;
+        margin-bottom: 5px;
+        text-shadow: 0 0 10px aliceblue;
+    }
+
+    .pop-up {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+
+        input[type="number"] {
+            width: 70%;
+            line-height: 2.5em;
+            border: none;
+            border-radius: 15px;
+            background-color: rgb(245, 222, 179);
+            color: rgb(45, 59, 21);
+            text-align: center;
+            font-size: 1em;
+        }
+
+        input[type="button"] {
+            width: 30%;
+            border: none;
+            border-radius: 15px;
+            background-image: linear-gradient(rgb(64, 211, 45), rgb(139, 247, 125)) ;
+            color: rgb(44, 59, 15);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-image: linear-gradient(rgba(64, 211, 45, 0.432), rgba(139, 247, 125, 0.486));
+        }
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        line-height: 3em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+        color: rgb(45, 59, 21);
+        background-color: rgba(169, 169, 169, 0.7);
+    }
+
+    button:hover {
+        background-color: rgba(47, 79, 79, 0.7);
+        color: thistle;
+        box-shadow: 0 0 15px aliceblue;
+    }
+}
+
+#greeting {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2vw;
+    width: 30vw;
+    height: 5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    color: peachpuff;
+    text-align: right;
+    z-index: 1;
+
+    button {
+        width: 40%;
+        padding: 0.5em;
+        background-image: linear-gradient(rgb(247, 247, 102), rgb(247, 192, 91));
+        border: none;
+        color: orangered;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-image: linear-gradient(rgb(247, 247, 64), rgb(248, 177, 46));
+    }
+}

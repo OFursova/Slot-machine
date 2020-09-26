@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tresure planet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="GET" name="regForm">
+        <label for="login">Enter your name: </label><input type="text" name="login" id="login">
+        <label for="password">Enter password: </label><input type="password" name="password" id="password">
+        <input type="button" name="enter" value="START A GAME">
+    </form>
+    <table id="terms">
+        <thead>
+            <tr>
+                <td>Комбинация</td>
+                <td>Описание</td>
+                <td>Выигрыш</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="chest">
+                    <img src="img/chest.png" alt="chest">
+                    <img src="img/chest.png" alt="chest">
+                    <img src="img/chest.png" alt="chest">
+                </td>
+                <td>Три сундука</td>
+                <td>800 к 1</td>
+            </tr>
+            <tr>
+                <td id="crown">
+                    <img src="img/crown.png" alt="crown">
+                    <img src="img/crown.png" alt="crown">
+                    <img src="img/crown.png" alt="crown">
+                </td>
+                <td>Три короны</td>
+                <td>200 к 1</td>
+            </tr>
+            <tr>
+                <td id="diamond">
+                    <img src="img/diamond.png" alt="diamond">
+                    <img src="img/diamond.png" alt="diamond">
+                    <img src="img/diamond.png" alt="diamond">
+                </td>
+                <td>Три бриллианта</td>
+                <td>80 к 1</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/ruby.png" alt="ruby">
+                    <img src="img/ruby.png" alt="ruby">
+                    <img src="img/ruby.png" alt="ruby">
+                </td>
+                <td>Три рубина</td>
+                <td>40 к 1</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/emerald.png" alt="emerald">
+                    <img src="img/emerald.png" alt="emerald">
+                    <img src="img/emerald.png" alt="emerald">
+                </td>
+                <td>Три изумруда</td>
+                <td>20 к 1</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/any3x.gif">
+                    <img src="img/gold-coin.png">
+                    <img src="img/silver-coin.png">
+                </td>
+                <td>Три любые монеты</td>
+                <td>10 к 1</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/any2x.gif">
+                    <img src="img/gold-coin.png">
+                    <img src="img/silver-coin.png">
+                </td>
+                <td>Две любые монеты</td>
+                <td>5 к 1</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/any1x.gif">
+                    <img src="img/gold-coin.png">
+                    <img src="img/silver-coin.png">
+                </td>
+                <td>Одна любая монета</td>
+                <td>2 к 1</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="spin">
+        <div>
+            <img src="img/chest.png" alt="lot_1" id="1">
+            <img src="img/chest.png" alt="lot_2" id="2">
+            <img src="img/chest.png" alt="lot_3" id="3">
+        </div>
+        <button id="lever"></button>
+    </div>
+    <div id="info">
+        <h3>Денег на счету:</h3>
+        <p id="account">0</p>
+        <div class="pop-up">
+            <input type="number" name="account" placeholder="0">
+            <input type="button" name="done" value="DONE">
+        </div>
+        <button id="addMoney">Пополнить счет</button>
+        <h3>На кону:</h3>
+        <p id="bet">0</p>
+        <div class="pop-up">
+            <input type="number" name="account" placeholder="0">
+            <input type="button" name="done" value="DONE">
+        </div>
+        <button id="makeBet">Ставка</button>
+        <h3>Выигрыш</h3>
+        <p id="win">0</p>
+        <div class="pop-up">
+            <input type="number" name="account" placeholder="0">
+            <input type="button" name="done" value="DONE">
+        </div>
+        <button id="getWin">Забрать</button>
+    </div>
+    <div id="greeting">
+        <button>Exit</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
